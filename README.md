@@ -40,8 +40,8 @@ Este é um guia passo a passo para configurar um projeto Spring Boot para servi�
 Para executar o projeto, siga estas etapas:
 
 1. Navegue até o diretório do projeto no Eclipse, por exemplo:
-  src/main/java
-    package com.financialservices.banking
-       BankingApplication
+  - src/main/java
+  -  package com.financialservices.banking
+  -      BankingApplication
 
 3. Clique com o botão direito e execute para iniciar o aplicativo Spring Boot:
