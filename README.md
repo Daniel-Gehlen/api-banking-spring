@@ -45,3 +45,69 @@ Para executar o projeto, siga estas etapas:
   -      BankingApplication
 
 3. Clique com o botão direito e execute para iniciar o aplicativo Spring Boot:
+4. 
+## Criando o diagrama de classes
+
+```mermaid
+classDiagram
+    class User {
+        -String id
+        -String name
+        -String email
+        -List<Account> accounts
+    }
+
+    class Account {
+        -String id
+        -String type
+        -Float balance
+        -String currency
+    }
+
+    class Transaction {
+        -String id
+        -String type
+        -Date date
+        -Float amount
+        -String currency
+        -String description
+        -String status
+        -String recipient
+        -String source
+        -String merchant
+    }
+
+    class Bill {
+        -String id
+        -String type
+        -Float amount
+        -String currency
+        -Date due_date
+        -String status
+    }
+
+    class Notification {
+        -String id
+        -String type
+        -Date date
+        -String message
+    }
+
+    class Offer {
+        -String id
+        -String type
+        -String description
+        -Float amount
+        -String currency
+        -Float interest_rate
+        -String terms
+        -Float minimum_investment
+        -String potential_return
+    }
+
+    User --> Account
+    User --> Transaction
+    User --> Notification
+    User --> Offer
+
+```
